@@ -1,0 +1,20 @@
+$primary-color: green;
+$primary-font: sans-serif, "cursive";
+
+body {
+  background: $primary-color;
+  font-family: $primary-font;
+}
+
+.container {
+  nav {
+    ul {
+      li {
+        font-size: 1em;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

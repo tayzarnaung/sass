@@ -1,0 +1,13 @@
+body {
+  background: green;
+  font-family: sans-serif, "cursive";
+}
+
+.container nav ul li {
+  font-size: 1em;
+}
+.container nav a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
