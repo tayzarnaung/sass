@@ -1,1 +1,3 @@
  * linguist-language=SCSS
+ *.css linguist-detectable=false
+ *.scss linguist-detectable=true
