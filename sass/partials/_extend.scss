@@ -1,0 +1,15 @@
+%ext-border {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.border1 {
+  @extend %ext-border;
+  font-size: 1em;
+}
+
+.border2 {
+  @extend %ext-border;
+  margin: 2em;
+}
