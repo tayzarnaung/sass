@@ -3,22 +3,6 @@ html, body, ul, li {
   padding: 0;
 }
 
-body {
-  background: green;
-  font-family: sans-serif, "cursive";
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-}
-.container nav ul li {
-  font-size: 1em;
-}
-.container nav a {
-  text-decoration: none;
-}
-
 .transform {
   width: 400px;
   height: 500px;
@@ -36,6 +20,55 @@ body {
   -ms-transform: rotate(20deg) scale(1.5);
   -webkit-transform: rotate(20deg) scale(1.5);
   transform: rotate(20deg) scale(1.5);
+}
+
+.border2, .border1 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.border1 {
+  font-size: 1em;
+}
+
+.border2 {
+  margin: 2em;
+}
+
+.element a {
+  text-decoration: none;
+  color: #0000;
+}
+.element a:hover {
+  color: white;
+}
+
+/*
+Using @import _partials 
+Using @mixin @include
+Using  @extend %extendName
+*/
+body {
+  background: green;
+  font-family: sans-serif, "cursive";
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container nav ul li {
+  font-size: 1em;
+}
+.container nav ul li:nth-child(1) {
+  font-size: 1em;
+}
+.container nav ul li:nth-child(2) {
+  font-size: 2em;
+}
+.container nav a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
