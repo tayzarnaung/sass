@@ -1,17 +1,17 @@
-@mixin transform_Me($prop1, $prop2) {
+@mixin transform($prop1, $prop2, $prop3) {
   width: $prop1;
   height: $prop2;
-  background-color: yellow;
+  background-color: orangered;
   -ms-transform: rotate(20deg) scale(1.5);
   -webkit-transform: rotate(20deg) scale(1.5);
-  transform: rotate(20deg) scale(1.5);
+  transform: $prop3;
 }
 
 .transform {
-  @include transform_Me(400px, 500px);
+  @include transform(400px, 500px, rotate(15deg) );
   font-size: 3em;
 }
 
 .transform-2 {
-  @include transform_Me(200px, 300px);
+  @include transform(200px, 300px, rotate(20deg) scale(1.5));
 }

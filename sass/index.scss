@@ -2,6 +2,7 @@
 @import "partials/mixins";
 @import "partials/extend";
 @import "partials/pseudo-selector";
+@import 'partials/operators';
 
 /*
 Using @import _partials 
@@ -9,7 +10,8 @@ Using @mixin @include
 Using  @extend %extendName
 */
 
-$primary-color: green;
+//Variables
+$primary-color: darkgray;
 $primary-font: sans-serif, "cursive";
 body {
   background: $primary-color;
@@ -23,7 +25,7 @@ body {
   nav {
     ul {
       li {
-        font-size: 1em;
+        font-size: 16pt;
         &:nth-child(1) {
           font-size: 1em;
         }

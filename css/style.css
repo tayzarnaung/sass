@@ -6,17 +6,17 @@ html, body, ul, li {
 .transform {
   width: 400px;
   height: 500px;
-  background-color: yellow;
+  background-color: orangered;
   -ms-transform: rotate(20deg) scale(1.5);
   -webkit-transform: rotate(20deg) scale(1.5);
-  transform: rotate(20deg) scale(1.5);
+  transform: rotate(15deg);
   font-size: 3em;
 }
 
 .transform-2 {
   width: 200px;
   height: 300px;
-  background-color: yellow;
+  background-color: orangered;
   -ms-transform: rotate(20deg) scale(1.5);
   -webkit-transform: rotate(20deg) scale(1.5);
   transform: rotate(20deg) scale(1.5);
@@ -44,13 +44,26 @@ html, body, ul, li {
   color: white;
 }
 
+.header {
+  background: olivedrab;
+  font-size: 3em;
+  height: 75%;
+  width: 50%;
+  height: 25pt;
+}
+
+p::before {
+  content: "I am a string with  quote";
+  font-family: cursiveserif;
+}
+
 /*
 Using @import _partials 
 Using @mixin @include
 Using  @extend %extendName
 */
 body {
-  background: green;
+  background: darkgray;
   font-family: sans-serif, "cursive";
 }
 
@@ -59,7 +72,7 @@ body {
   height: 100%;
 }
 .container nav ul li {
-  font-size: 1em;
+  font-size: 16pt;
 }
 .container nav ul li:nth-child(1) {
   font-size: 1em;

@@ -1,0 +1,16 @@
+.header{
+    background: olivedrab;
+    font-size: 1em+2;
+
+    height: 80%-5;
+
+   width:25% * 2;
+   height: (100pt/4); //required pranthesis
+}
+
+p{
+    &::before{
+        content: "I am a string with  " + quote; //" " will show in style.css
+        font-family: cursive + "serif"; //" " will not output in style.css
+    }
+}
