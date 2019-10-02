@@ -7,6 +7,16 @@
   transform: $prop3;
 }
 
+@mixin transformNoParam() {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(15deg);
+}
+
+
 .transform {
   @include transform(400px, 500px, rotate(15deg) );
   font-size: 3em;
@@ -14,4 +24,8 @@
 
 .transform-2 {
   @include transform(200px, 300px, rotate(20deg) scale(1.5));
+}
+
+.transNoParam{
+  @include transformNoParam()
 }

@@ -1,4 +1,5 @@
 %ext-border {
+  // % is called placeholder
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
@@ -13,3 +14,23 @@
   @extend %ext-border;
   margin: 2em;
 }
+
+/* -  -   -  -   -  -
+%transform {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(15deg);
+}
+
+.transform {
+  @extend %transform;
+  font-size: 3em;
+}
+
+.transform-2 {
+  @extend %transform;
+}
+ -  -   -  -   -  - */

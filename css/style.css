@@ -22,6 +22,15 @@ html, body, ul, li {
   transform: rotate(20deg) scale(1.5);
 }
 
+.transNoParam {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(15deg);
+}
+
 .border2, .border1 {
   border: 1px solid #ccc;
   padding: 10px;
@@ -36,6 +45,25 @@ html, body, ul, li {
   margin: 2em;
 }
 
+/* -  -   -  -   -  -
+%transform {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(15deg);
+}
+
+.transform {
+  @extend %transform;
+  font-size: 3em;
+}
+
+.transform-2 {
+  @extend %transform;
+}
+ -  -   -  -   -  - */
 .element a {
   text-decoration: none;
   color: #0000;
@@ -58,9 +86,9 @@ p::before {
 }
 
 /*
-Using @import _partials 
-Using @mixin @include
-Using  @extend %extendName
+Using _patialsName   @import "partialsName"
+Using @mixin fun()   @include fun()
+Using %extName       @extend %extName
 */
 body {
   background: darkgray;
